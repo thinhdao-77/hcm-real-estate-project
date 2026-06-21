@@ -11,9 +11,9 @@ hcm-real-estate-project/
 │   └── processed/                  # Chứa file dữ liệu đã được làm sạch (xuất ra từ notebook)
 │
 ├── notebooks/                      # Không gian làm việc, nháp và tiền xử lý dữ liệu
-│   ├── 01_data_exploration.ipynb   # File khám phá, xem xét cấu trúc dữ liệu (EDA)
-│   ├── 02_data_cleaning.ipynb      # File code làm sạch dữ liệu, xử lý missing values
-│   └── 03_testing_charts.ipynb     # (Tùy chọn) Chạy thử các biểu đồ
+│   ├── data_exploration.ipynb      # File khám phá, xem xét cấu trúc dữ liệu (EDA)
+│   ├── data_cleaning.ipynb         # File code làm sạch dữ liệu, xử lý missing values
+│   └── testing_charts.ipynb        # (Tùy chọn) Chạy thử các biểu đồ
 │
 ├── src/                            # Trung tâm chứa mã nguồn thực thi
 │   ├── backend/                    # Phần API xử lý logic AI và Code (Bắt buộc)
@@ -24,11 +24,11 @@ hcm-real-estate-project/
 │   │   └── requirements_ui.txt     
 │   └── logs/                       # Hệ thống lưu trữ lịch sử
 │       └── history_logs.json       
-│
-└── README.md                       # File hướng dẫn chạy project
+├── GUIDE.md                        # File hướng dẫn chạy dự án
+└── README.md                       # File README dự án
 ```
 
-## 2. Nội dung dự án
+## 2. Tổng quan dự án
 - Trình bày một dự án ứng dụng trực quan sử dụng dashboard để phân tích dữ liệu.
 - Ngữ cảnh của dữ liệu là **Việt Nam**.
 - Các nhóm sẽ trình bày trong buổi vấn đáp.
@@ -62,7 +62,7 @@ hcm-real-estate-project/
    - Kết luận và câu chuyện rút ra từ dữ liệu.
 
 ## 5. Tích hợp AI: Thiết kế và vận hành
-Dự án yêu cầu tích hợp tính năng AI vào phân tích dữ liệu (có thể là ứng dụng độc lập, tích hợp vào dashboard hoặc tạo API để các ứng dụng khác sử dụng). **Khuyến khích tạo API**.
+Dự án yêu cầu tích hợp tính năng AI vào phân tích dữ liệu (có thể là ứng dụng độc lập, tích hợp vào dashboard hoặc tạo API để các ứng dụng khác sử dụng).
 
 ### 5.1. Nguyên tắc cơ bản
 - **Vai trò của AI:**
@@ -104,4 +104,4 @@ Công nghệ phát triển là tùy chọn (Streamlit, Gradio, React,...). Cần
 
 ## 7. Trong báo cáo và vấn đáp
 - **Vấn đáp:** Các nhóm sẽ sử dụng module AI đã phát triển để trả lời các câu hỏi phân tích từ hội đồng (dựa trên dữ liệu nhóm và câu hỏi chuẩn bị sẵn). Số lượng câu hỏi tối thiểu bằng số lượng thành viên nhóm.
-- **Báo cáo:** Phải tóm tắt quá trình sử dụng AI, những yêu cầu đặt ra, kết quả nhận được, thay đổi đã thực hiện và nhận xét về AI.
+- **Báo cáo:** Phải tóm tắt quá trình sử dụng AI, những yêu cầu đặt ra, kết quả nhận được, thay đổi đã thực hiện và nhận xét về AI.
